@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Live User Filter</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h4 class="title">Live User Filter</h4>
+            <small class="subtitle">Search by name and/or location</small>
+            <input type="text" class="text" id="filter" placeholder="Search...">
+            
+        </header>
+
+        <ul class="user-list" id="result">
+            
+            
+            <li id="load">
+                <h3>Loading...</h3>
+            </li>
+            <li  class="hide" id="nomatch">
+                <i class="fa fa-search" id="searchicon" aria-hidden="true"></i>
+                <h3>No Matches Found</h3>
+            </li>
+        </ul> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

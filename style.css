@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Main container that holds every thing */
+.container{
+    border-radius: 15px;
+    width: 300px;
+    height: 90vh;
+    min-height: 300px;
+    overflow: hidden;
+   
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+
+}
+
+/* header section of the .container that contains title and search bar */
+.header{
+    background-color: #3e57db;
+    color: white;
+    padding: 30px 30px;
+}
+
+/* title inside the header section  */
+.title{
+    margin: 0;
+}
+/* subtitle in the header section  */
+.subtitle{
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+/* search bar  */
+.header input{
+    background-color: rgba(0,0,0,0.3);
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 14px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 3px;
+    
+}
+
+/* outline of search bar  */
+.header input:focus{
+    outline: none;
+}
+/* main ul element that contains all the cards or li items  */
+.user-list{
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* all li items inside the ul tag  */
+.user-list li{
+    display: flex;
+    padding: 20px;
+}
+
+/* profile image inside the li tag  */
+.user-list li img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+/* user information main div inside li tag  */
+.user-list .user-info{
+    margin-left: 10px;
+}
+/* header of .user-info like name  */
+.user-list .user-info h4{
+    margin: 0 0 10px;
+}
+/* paragaph about user inside .user-info like adress  */
+.user-list .user-info p{
+    font-size: 12px;
+}
+
+/* :horizontal bottom border except the last li item  */
+.user-list li:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+
+/* hiding content when search is not found  */
+.user-list li.hide{
+    
+    display: none;
+}
+
+#load>h3{
+    font-size: 14px;
+}
+
+#nomatch{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#nomatch>h3{
+    color: rgba(0,0,0,0.7);
+}
+#searchicon{
+    
+    font-size: 40px;
+    color: rgba(0,0,0,0.3);
+    
+    
+    
+}
+
+.errorMessage{
+    
+    color: rgba(0, 0, 0, 0.7);
+    font-size: xx-small;
+}
+
+
+
+/*Loading animation*/
+
+.user-list li .load{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #3e57db;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#d1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3e57db;
+}
+
+/* total users feild  */
+.tot-users{
+    margin-top: 10px;
+   padding-top: 10px;
+   padding-left: 10px;
+   margin-left: 20px;
+}
